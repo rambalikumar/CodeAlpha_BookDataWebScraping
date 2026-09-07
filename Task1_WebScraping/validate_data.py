@@ -1,8 +1,9 @@
+from pathlib import Path
 import pandas as pd
 
+data_file = Path(__file__).resolve().parent / "books_data.csv"
 
-df = pd.read_csv("books_data.csv")
-
+df = pd.read_csv(data_file)
 
 print("Shape:", df.shape)
 

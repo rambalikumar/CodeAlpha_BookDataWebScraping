@@ -30,7 +30,7 @@ def get_category(book_url):
 
 
         except requests.RequestException as e:
-            print(f"Attempt {attempt + 1} failed: {book_url} - > {e}")
+            print(f"Attempt {attempt + 1} failed: {book_url} -> {e}")
 
     return "Unknown"
 
